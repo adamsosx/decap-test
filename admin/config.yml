@@ -1,16 +1,22 @@
 backend:
   name: github
-  repo: adamsosx/decap-test # Upewnij się, że to TWOJA nazwa użytkownika/nazwa repozytorium testowego
-  branch: main             # Lub master, jeśli to Twoja główna gałąź
-  auth_type: pkce
-  app_id: 0v23lisxsANoygB2K3I2
+  repo: adamsosx/decap-test  # Zmień na nazwę Twojego repozytorium testowego (np. adamsosx/sveltia-test)
+  branch: main                  # Twoja główna gałąź
+  auth_type: pkce               # Używa bezpośredniej autoryzacji GitHub
+  app_id: Ov23lisxsANoygB2K3I2  # Twój ostatni Client ID
 
-media_folder: "media" # Upewnij się, że folder "media" istnieje w repozytorium "decap-test"
+# Konfiguracja miejsca, gdzie będą przechowywane media
+media_folder: "media"             # Folder w repozytorium, gdzie CMS zapisuje media
+                                  # UPEWNIJ SIĘ, ŻE TEN FOLDER ISTNIEJE!
+public_folder: "/media"           # Publiczna ścieżka URL do mediów na stronie
 
+# Definicje kolekcji
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "_posts"   # Upewnij się, że folder "_posts" istnieje w repozytorium "decap-test"
+    folder: "_posts"              # Folder w repozytorium, gdzie przechowywane są wpisy
+                                  # UPEWNIJ SIĘ, ŻE TEN FOLDER ISTNIEJE!
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
