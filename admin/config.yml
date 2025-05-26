@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: adamosx/decap-test # Upewnij się, że to TWOJA nazwa użytkownika/nazwa repozytorium testowego
+  repo: adamsosx/decap-test # Upewnij się, że to TWOJA nazwa użytkownika/nazwa repozytorium testowego
   branch: main             # Lub master, jeśli to Twoja główna gałąź
   auth_type: pkce
   app_id: 0v23lisxsANoygB2K3I2
