@@ -1,16 +1,16 @@
 backend:
   name: github
-  repo: adamosx/decap-test 
-  branch: main 
+  repo: adamsosx/decap-test # Upewnij się, że to TWOJA nazwa użytkownika/nazwa repozytorium testowego
+  branch: main             # Lub master, jeśli to Twoja główna gałąź
   auth_type: pkce
-  client_id: 'Ov23lisxsANoygB2K3I2'
+  app_id: 0v23lisxsANoygB2K3I2
 
-media_folder: "media" # Utwórz folder "media" w repozytorium "decap-test"
+media_folder: "media" # Upewnij się, że folder "media" istnieje w repozytorium "decap-test"
 
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "_posts" # Utwórz folder "_posts" w repozytorium "decap-test"
+    folder: "_posts"   # Upewnij się, że folder "_posts" istnieje w repozytorium "decap-test"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
